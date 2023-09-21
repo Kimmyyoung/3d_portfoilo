@@ -32,7 +32,7 @@ import blog from './blog.png';
 import coffeeorder from './coffeeorder.png';
 import fitnessweb from './fitnessweb.png';
 import expenseTracker from './reactapp.png';
-import scrollInteraction from './scrollInteraction.png';
+import scrollInteraction from './scrollinteraction.png';
 import sunshinegame from './sunshinegame.png';
 import twitter from './twitter.png';
 
