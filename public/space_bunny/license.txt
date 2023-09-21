@@ -1,0 +1,11 @@
+Model Information:
+* title:	Space Bunny
+* source:	https://sketchfab.com/3d-models/space-bunny-68ed23b0ff774a14a5d7eb0bb932c31e
+* author:	Pat Sipes (https://sketchfab.com/pasipes)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Space Bunny" (https://sketchfab.com/3d-models/space-bunny-68ed23b0ff774a14a5d7eb0bb932c31e) by Pat Sipes (https://sketchfab.com/pasipes) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
