@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../style';
 import { github } from '../assets';
 import { webLogo } from '../assets';
-
+//Wrapper
 import { SectionWrapper } from '../hoc';
 import { fadeInWork } from "../utils/motion";
 
