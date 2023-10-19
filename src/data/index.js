@@ -23,7 +23,8 @@ import {
   expenseTracker,
   scrollInteraction,
   sunshinegame,
-  twitter
+  twitter,
+  threads
 } from "../assets";
 
 export const navLinks = [
@@ -175,6 +176,28 @@ const experiences = [
 
 
 const projects = [
+  {
+    name: "Threads - Social Media Web App",
+    description:
+      "This project features a user management system built on MongoDB and Clerk for user pool integration. The system ensures secure registration, login, and profile management, highlighting robust database design, authentication, and access control capabilities. It stands as a testament to the successful execution of a scalable user data solution.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Clerk",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: threads,
+    source_code_link: "https://github.com/Kimmyyoung/Threads",
+    website_link: "https://threads-liard-theta.vercel.app/"
+  },
   {
     name: "Workout Web (API)",
     description:

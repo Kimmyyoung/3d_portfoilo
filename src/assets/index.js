@@ -35,6 +35,7 @@ import expenseTracker from './reactapp.png';
 import scrollInteraction from './scrollinteraction.png';
 import sunshinegame from './sunshinegame.png';
 import twitter from './twitter.png';
+import threads from './threads.jpg';
 
 
 export {
@@ -71,5 +72,6 @@ export {
   expenseTracker,
   scrollInteraction,
   sunshinegame,
-  twitter
+  twitter,
+  threads
 };
