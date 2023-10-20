@@ -12,7 +12,7 @@
 
   <h3> :gift_heart: Kimmy - Portfolio </h3>
   <hr/>
-  <p> Learn more projects I have been worked </p>
+  <p> Learn more projects I have been worked | Deploy : AWS Amplify </p>
   
   
   
