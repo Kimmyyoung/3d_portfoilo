@@ -1,0 +1,27 @@
+/* .cursor-style {
+  background-color: rgba(0, 255, 255, 0.7);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  transform-origin: 100% 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  pointer-events: none;
+} */
+
+.cursor-style{
+  background-color: #190482;
+  box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #7752FE;
+  position: fixed;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  transition:
+    background ease-in 10ms,
+    box-shadow ease-in 150ms,
+    transform ease-in 150ms;
+  transform: translate3d(0, 0, 0);
+}
