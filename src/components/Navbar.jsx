@@ -1,9 +1,9 @@
-import React, { useEffect , useState} from 'react'
+import React, { useState} from 'react'
 import {Link} from 'react-router-dom';
 
 import { styles } from '../style';
 import { navLinks } from '../data';
-import { logo, menu, close } from '../assets';
+import { logo, menu, close, github } from '../assets';
 
 
 const Navbar = () => {
@@ -33,6 +33,9 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li className="text-white">
+            <Link to="https://github.com/Kimmyyoung/3d_portfoilo"><img src={github} width={30} height={30}/></Link>
+          </li> 
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -58,6 +61,9 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li className="text-white">
+                <Link to="https://github.com/Kimmyyoung/3d_portfoilo"><img src={github} width={15} height={15}/></Link>
+              </li> 
             </ul>
           </div>
         </div>

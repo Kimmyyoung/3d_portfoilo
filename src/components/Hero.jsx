@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-
 import { styles } from '../style';
 import { ComputersCanvas } from './canvas';
 
@@ -23,6 +22,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
+
       <ComputersCanvas />
    
       {/* scroll icon */}
@@ -42,6 +43,8 @@ const Hero = () => {
           </div>
         </a>
       </div>
+
+            
     </section>
   )
 }

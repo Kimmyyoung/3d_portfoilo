@@ -3,6 +3,7 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } fr
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
