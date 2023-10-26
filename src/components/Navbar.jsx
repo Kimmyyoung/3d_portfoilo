@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom';
 
 import { styles } from '../style';
@@ -9,10 +9,25 @@ import { logo, menu, close, github } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [themeIsDark, setThemeIsDark] = useState(false);
 
+  const themeModeHandle = (e) => {
+    e.preventDefault();
+    localStorage.theme = localStorage.them === 'dark' ? 'light' : 'dark';
+    document.documentElement.classList.toggle("dark");
+    setThemeIsDark(!themeIsDark);
+  };
+
+  useEffect(()=>{
+    if(localStorage.theme === 'dark') {
+      setThemeIsDark(true);
+    }else{
+      setThemeIsDark(false);
+    }
+  },[]);
 
   return (
-    <nav className={`${styles.paddingX} w-full flexitems-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flexitems-center py-5 fixed top-0 z-20 bg-primary dark:bg-white`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={()=>{
           setActive('')
@@ -27,14 +42,22 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer dark:text-gray`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li className="text-white">
+          <li className="text-white dark:text-gray">
             <Link to="https://github.com/Kimmyyoung/3d_portfoilo"><img src={github} width={30} height={30}/></Link>
+          </li> 
+          <li className="text-white">
+                <button
+                    className='rounded-xl bg-black px-2 py-1 text-xl font-semibold text-white dark:bg-white dark:text-black'
+                    onClick={themeModeHandle}
+                  >
+                    {themeIsDark ? "Dark" : "Light"}
+                  </button>              
           </li> 
         </ul>
 
