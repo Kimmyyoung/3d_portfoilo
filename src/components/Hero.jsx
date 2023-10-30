@@ -4,7 +4,7 @@ import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto dark:bg-indigo-50">
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         {/* circle line */}
@@ -15,8 +15,8 @@ const Hero = () => {
 
         {/* name */}
         <div>
-          <h1 className={`${styles.heroHeadText} text-white dark:text-black`}>Hello! I am <span className="text-[#915eff">Kimmy 👋 </span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-black`}>
+          <h1 className={`${styles.heroHeadText} text-white dark:text-[#915EFF]`}>Hello! I am <span className="text-[#915eff]">Kimmy 👋 </span></h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-zinc-500`}>
             I mainly do Frontend Development <br className='sm:block hidden' />
             and UI/UX design and Game Frontend Development
           </p>

@@ -9,9 +9,10 @@ function App() {
     cursor.current.style.top = `${e.clientY}px`;
     cursor.current.style.left = `${e.clientX}px`;
   }
+  
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary" onMouseMove={changePosition}>
+      <div className="relative z-0 bg-primary dark:bg-indigo-50" onMouseMove={changePosition}>
       <div className="cursor-style" ref={cursor} ></div>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
