@@ -13,9 +13,9 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        {/* name */}
+        {/* name - aaa6c3*/}
         <div>
-          <h1 className={`${styles.heroHeadText} text-white dark:text-[#915EFF]`}>Hello! I am <span className="text-[#915eff]">Kimmy 👋 </span></h1>
+          <h1 className={`${styles.heroHeadText} text-white dark:text-[#aaa6c3]`}>Hello! I am <span className="text-[#915eff] dark:text-[#915EFF]">Kimmy 👋 </span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-zinc-500`}>
             I mainly do Frontend Development <br className='sm:block hidden' />
             and UI/UX design and Game Frontend Development

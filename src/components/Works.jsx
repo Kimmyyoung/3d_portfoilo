@@ -38,7 +38,7 @@ const ProjectCard = ({
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
             <div
               onClick={() => window.open(website_link, "_blank")}
-              className='blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='green-pink-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={webLogo}
