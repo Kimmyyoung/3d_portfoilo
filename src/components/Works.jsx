@@ -7,7 +7,6 @@ import { webLogo } from '../assets';
 //
 import { SectionWrapper } from '../hoc';
 import { fadeInWork } from "../utils/motion";
-
 import { projects } from '../data';
 
 const ProjectCard = ({ 

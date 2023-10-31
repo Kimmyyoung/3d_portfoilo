@@ -10,8 +10,6 @@ import { slideIn } from "../utils/motion";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
