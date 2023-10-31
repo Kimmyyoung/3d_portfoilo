@@ -9,7 +9,6 @@ const MusicGirl = ({ isMobile }) => {
   dracoLoader.setDecoderPath("./music-girl/"); // Draco 디코더 모듈의 경로를 설정
 
   const { scene } = useGLTF("./music-girl/scene.glb", dracoLoader);
-
   // const musicgirl = useGLTF("./music-girl/scene.gltf");
   return (
     <mesh>
