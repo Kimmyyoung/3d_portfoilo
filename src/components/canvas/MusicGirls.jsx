@@ -1,11 +1,17 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import CanvasLoader from "../Loader";
 
+
 const MusicGirl = ({ isMobile }) => {
-  const musicgirl = useGLTF("./music-girl/scene.gltf");
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath("./music-girl/scene.gltf"); // Draco 디코더 모듈의 경로를 설정
+
+  const { scene } = useGLTF("./music-girl/scene.gltf", dracoLoader);
+
+  // const musicgirl = useGLTF("./music-girl/scene.gltf");
 
   return (
     <mesh>
@@ -20,10 +26,10 @@ const MusicGirl = ({ isMobile }) => {
       />
       <pointLight intensity={0} />
       <primitive
-        object={musicgirl.scene}
+        object={scene}
         scale={isMobile ? 8 : 12 }
         position={isMobile ? [-0.5, -3.5, 0.5] : [0,-3,0.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[-0.01, 3, -0.1]}
       />
     </mesh>
   );
