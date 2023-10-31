@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { styles } from '../style';
-import { ComputersCanvas } from './canvas';
+import { MusicGirlsCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -17,14 +17,14 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white dark:text-[#aaa6c3]`}>Hello! I am <span className="text-[#915eff] dark:text-[#915EFF]">Kimmy 👋 </span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-zinc-500`}>
-            I mainly do Frontend Development <br className='sm:block hidden' />
+            I mainly do coding <br className='sm:block hidden' />
             and UI/UX design and Game Frontend Development
           </p>
         </div>
       </div>
 
 
-      <ComputersCanvas />
+      <MusicGirlsCanvas />
    
       {/* scroll icon */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
