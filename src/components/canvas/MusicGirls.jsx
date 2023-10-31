@@ -7,9 +7,10 @@ import CanvasLoader from "../Loader";
 const MusicGirl = ({ isMobile }) => {
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath("./music-girl/"); // Draco 디코더 모듈의 경로를 설정
+  // const musicgirl = useGLTF("./music-girl/scene.gltf");
 
   const { scene } = useGLTF("./music-girl/scene.glb", dracoLoader);
-  // const musicgirl = useGLTF("./music-girl/scene.gltf");
+
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor='black' />
