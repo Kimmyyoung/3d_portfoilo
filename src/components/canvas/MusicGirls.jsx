@@ -4,7 +4,6 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import CanvasLoader from "../Loader";
 
-
 const MusicGirl = ({ isMobile }) => {
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath("./music-girl/"); // Draco 디코더 모듈의 경로를 설정
