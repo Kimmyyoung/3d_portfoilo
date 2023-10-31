@@ -11,7 +11,6 @@ const MusicGirl = ({ isMobile }) => {
   const { scene } = useGLTF("./music-girl/scene.glb", dracoLoader);
 
   // const musicgirl = useGLTF("./music-girl/scene.gltf");
-
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor='black' />
