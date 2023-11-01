@@ -1,18 +1,37 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import CanvasLoader from "../Loader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const Girl = ({ isMobile }) => {
-  // draco : 3d img optimize
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("./cute_girl/scene.gltf");
+  const [model, setModel] = useState(null);
 
-  const girl = useGLTF("./cute_girl/scene.gltf", dracoLoader);
+  useEffect(() => {
+    const scene = new THREE.Scene();
+
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("/path/to/draco_decoder/");
+
+    const loader = new GLTFLoader();
+    loader.setDRACOLoader(dracoLoader);
+
+    loader.load('./cute_girl/scene.gltf', (gltf) => {
+      const girlModel = gltf.scene;
+      scene.add(girlModel);
+      setModel(girlModel);
+    }, undefined, (err) => {
+      console.error(err);
+    });
+  }, []);
+
+  if (!model) {
+    return null; 
+  }
 
   return (
-    <mesh>
+    <group>
       <hemisphereLight intensity={3} groundColor='black' />
       <spotLight
         position={[0, -1, 1]}
@@ -24,15 +43,14 @@ const Girl = ({ isMobile }) => {
       />
       <pointLight intensity={0} />
       <primitive
-        object={girl.scene}
-        scale={isMobile ? 2 : 2.7 }
-        position={isMobile ? [1, -13, 0.5] : [1,-16.5,0.5]}
-        rotation={[-0.1, 3, -0.1]}
+        object={model}
+        scale={isMobile ? [2, 2, 2] : [2.7, 2.7, 2.7]}
+        position={isMobile ? [1, -13, 0.5] : [1, -16.5, 0.5]}
+        rotation={[0, -1, 0]}
       />
-    </mesh>
+    </group>
   );
 };
-
 const GirlsCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
