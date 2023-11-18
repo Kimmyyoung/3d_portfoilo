@@ -1,14 +1,14 @@
 .cursor-style{
   /* violet gradient */
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #CCFFC8;
+  background: linear-gradient(-90deg, #CCFFC8 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #CCFFC8 0%,
     rgba(60, 51, 80, 0) 100%
   );
   
-  box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #7752FE;
+  box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #CCFFC8;
   position: fixed;
   z-index: 5;
   width: 50px;

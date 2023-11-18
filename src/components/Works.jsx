@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../style';
 import { github } from '../assets';
-import { webLogo } from '../assets';
-//
+import { click } from '../assets';
+
+
 import { SectionWrapper } from '../hoc';
 import { fadeInWork } from "../utils/motion";
 import { projects } from '../data';
@@ -25,7 +26,7 @@ const ProjectCard = ({
         scale: 1,
         speed: 450
       }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-[#393E46] p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -37,10 +38,10 @@ const ProjectCard = ({
         <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
             <div
               onClick={() => window.open(website_link, "_blank")}
-              className='green-pink-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='star-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={webLogo}
+                src={click}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -61,7 +62,7 @@ const ProjectCard = ({
 
         {/* project name */}
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px] dark:text-[#915EFF]'>{name}</h3>
+          <h3 className='text-white font-bold text-[24px] dark:text-green-300'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -86,13 +87,13 @@ const Works = () => {
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText} dark:text-[#915EFF]`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} font-poppins dark:text-gray-500 `}>My work</p>
+        <h2 className={`${styles.sectionHeadText} font-poppins dark:text-green-300`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[17px] font-poppins font-light leading-[30px] dark:text-gray-500'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

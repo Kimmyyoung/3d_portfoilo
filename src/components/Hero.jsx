@@ -4,30 +4,24 @@ import { GirlsCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto dark:bg-indigo-50">
+    <section className="relative pt-40 w-full h-screen mx-auto dark:bg-slate-50">
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
-        {/* circle line */}
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        {/* name - aaa6c3*/}
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white dark:text-[#aaa6c3]`}>Hello! I am <span className="text-[#915eff] dark:text-[#915EFF]">Kimmy 👋 </span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 dark:text-zinc-500`}>
-            I mainly do coding <br className='sm:block hidden' />
-            and UI/UX design and Game Frontend Development
+        className={`inset-0  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-center gap-5`}>
+        <div className="mt-10 justify-items-center font-poppins text-center	">
+          <h1 className={`${styles.heroHeadText} text-white dark:text-zinc-900`}>Frontend Developer <span className="text-[#CCFFC8]	 dark:text-green-300 font-poppins italic">Kim. </span></h1>
+          <p className={`${styles.heroSubText} font-thin mt-2 text-white-100 dark:text-zinc-500`}>
+            A experienced <span className="text-green-100 font-semibold dark:text-green-300">software developer</span> from Vancouver, BC, Canada<br className='sm:block hidden' />
+            with a passion for <span className="text-green-100 font-semibold dark:text-green-300">code</span> and <span className="text-green-100 font-semibold dark:text-green-300">design</span>. Let's build something <span className="text-green-100 font-semibold dark:text-green-300">amazing</span> together.
           </p>
         </div>
       </div>
 
-
-      <GirlsCanvas />
+      <div className="w-full h-4/6 overflow-hidden sm:h-25">
+        <GirlsCanvas />
+      </div>
    
       {/* scroll icon */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-end pr-2 items-end">
         {/* scroll Icon click -> about  */}
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

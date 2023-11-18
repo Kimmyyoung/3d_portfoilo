@@ -22,10 +22,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
 import admindashboard from './admindashboard.png';
 import blog from './blog.png';
@@ -36,7 +32,7 @@ import scrollInteraction from './scrollinteraction.png';
 import sunshinegame from './sunshinegame.png';
 import twitter from './twitter.png';
 import threads from './threads.jpg';
-
+import click from './click.png';
 
 export {
   logo,
@@ -61,10 +57,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   admindashboard,
   blog,
   coffeeorder,
@@ -73,5 +65,6 @@ export {
   scrollInteraction,
   sunshinegame,
   twitter,
-  threads
+  threads,
+  click
 };

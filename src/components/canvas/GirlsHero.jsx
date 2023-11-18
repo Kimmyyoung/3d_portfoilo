@@ -45,8 +45,8 @@ const Girl = ({ isMobile }) => {
       <primitive
         object={model}
         scale={isMobile ? [2, 2, 2] : [2.7, 2.7, 2.7]}
-        position={isMobile ? [1, -13, 0.5] : [1, -16.5, 0.5]}
-        rotation={[0, -1, 0]}
+        position={isMobile ? [1, -10, 0.5] : [1, -12, 0.5]}
+        rotation={[0, -2, 0]}
       />
     </group>
   );
@@ -74,7 +74,7 @@ const GirlsCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [32, 0, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

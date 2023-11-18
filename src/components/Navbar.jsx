@@ -26,13 +26,14 @@ const Navbar = () => {
   },[]);
 
   return (
-    <nav className={`${styles.paddingX} w-full flexitems-center py-5 fixed top-0 z-20 bg-primary dark:bg-indigo-50`}>
+    <nav className={`${styles.paddingX} w-full flexitems-center py-5 font-poppins fixed top-0 z-20 bg-primary dark:bg-slate-50`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={()=>{
           setActive('')
           window.scrollTo(0,0);
         }}>
-          <img src={logo} alt='logo' className="w-9 h-9 object-contain" />
+          {/* <img src={logo} alt='logo' className="w-9 h-9 object-contain" /> */}
+          <h1 className="text-green-300 text-2xl">K</h1>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -40,21 +41,21 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer dark:text-gray`}
+                active === nav.title ? "text-white" : "text-slate-300"
+              } hover:text-green-200 text-[18px] font-medium cursor-pointer dark:text-gray`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
 
-          <li className="text-white dark:text-indigo-700 flex flex-row	">
+          <li className="text-white dark:text-gray-700 flex flex-row	">
             <Link to="https://github.com/Kimmyyoung/3d_portfoilo">
-            <img src={github} width={26} height={26} className="dark:bg-indigo-300 rounded-full mt-0.5"/>
+            <img src={github} width={26} height={26} className="dark:bg-gray-500 rounded-full mt-0.5"/>
             </Link>
 
             <button
-                    className='rounded-xl bg-black px-2 py-1 text-xl font-semibold text-white dark:bg-indigo-50 dark:text-indigo-300'
+                    className='rounded-xl bg-black px-2 py-1 text-xl font-semibold text-white dark:bg-transparent dark:text-gray-500'
                     onClick={themeModeHandle}
                   >
                     {themeIsDark ? (
@@ -67,8 +68,8 @@ const Navbar = () => {
                     ): (
                       //Moon Icon svg
                       <div className="p-0 m-0">
-                      <svg className="light" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                      <path fill="rgb(165,180,252)" d="M22.534 17.043a.769.769 0 0 0-.854-.238 8.11 8.11 0 0 1-2.747.462c-4.65 0-8.433-3.785-8.433-8.434a8.407 8.407 0 0 1 3.695-6.97.768.768 0 0 0-.32-1.394A7.442 7.442 0 0 0 12.8.4C6.458.4 1.3 5.558 1.3 11.9s5.158 11.5 11.5 11.5c4.025 0 7.687-2.045 9.792-5.47a.772.772 0 0 0-.058-.887z"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                      <path fill="#ffffff" d="M22.534 17.043a.769.769 0 0 0-.854-.238 8.11 8.11 0 0 1-2.747.462c-4.65 0-8.433-3.785-8.433-8.434a8.407 8.407 0 0 1 3.695-6.97.768.768 0 0 0-.32-1.394A7.442 7.442 0 0 0 12.8.4C6.458.4 1.3 5.558 1.3 11.9s5.158 11.5 11.5 11.5c4.025 0 7.687-2.045 9.792-5.47a.772.772 0 0 0-.058-.887z"/></svg>
                      </div>
                     )}
                   </button>   

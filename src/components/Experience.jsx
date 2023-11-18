@@ -10,14 +10,14 @@ import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience })=> {
     return (
-      <VerticalTimelineElement contentStyle={{ background: "#1d1836", color: "#fff"}}
+      <VerticalTimelineElement contentStyle={{ background: "#393E46", color: "#fff"}}
       contentArrowStyle={{borderRight: `7px solid #233631`}}
       date={experience.date}
-      iconStyle={{background: experience.iconBg}}
+      iconStyle={{background: "#CCFFC8"}}
       >
         <div>
-          <h3 className="text-white text-[24px] font-bold dark:text-[#915EFF]">{experience.title}</h3>
-          <p className="text-secondary text-[16px] font-semibold">{experience.company_name}</p>
+          <h3 className="text-white text-[24px] font-poppins font-bold tracking-wide">{experience.title}</h3>
+          <p className="text-[#CCFFC8] text-[16px] font-poppins italic font-semibold">{experience.company_name}</p>
         </div>
 
         <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -38,8 +38,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done</p>
-          <h2 className={`${styles.sectionHeadText} dark:text-[#915EFF]`}>Work Experience</h2>
+          <p className={`${styles.sectionSubText} font-poppins dark:text-gray-500`}>What I have done</p>
+          <h2 className={`${styles.sectionHeadText} font-poppins dark:text-green-300`}>Work Experience</h2>
       </motion.div>
       
       <div className="mt-20 flex flex-col">

@@ -7,7 +7,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -19,6 +19,16 @@
   padding-bottom: 100px;
   display: block;
 }
+
+.bg-hero-pattern {
+  background-image: url('../src/assets/background-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
 
 .black-gradient {
   background: #000000; 
@@ -35,6 +45,7 @@
 }
 
 
+
 .blue-gradient {
   background: blue; 
   background: -webkit-linear-gradient(
@@ -49,6 +60,11 @@
   );
 }
 
+.star-gradient {
+  background: "#000000";
+  background: linear-gradient(90.13deg, #DEE4EA 1.9%, #F9FCFF 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #DEE4EA 1.9%, #F9FCFF 97.5%);
+}
 
 .violet-gradient {
   background: #804dee;
@@ -62,8 +78,8 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #C8D6E5 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #C8D6E5 97.5%);
 }
 
 .orange-text-gradient {

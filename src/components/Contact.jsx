@@ -63,14 +63,14 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse font-poppins gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-[#393E46] p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={`${styles.sectionHeadText} dark:text-[#915EFF]`}>Contact.</h3>
+        <p className={`${styles.sectionSubText} dark:text-gray-500`}>Get in touch</p>
+        <h3 className={`${styles.sectionHeadText} dark:text-green-300`}>Let's Connect</h3>
 
         <form
           ref={formRef}
@@ -85,7 +85,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name? 🩷"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#5F7161] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -96,7 +96,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email? 🧡"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#5F7161] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -107,14 +107,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Lets connect together! 💙'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#5F7161] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <ToastContainer position="bottom-center" limit={1} />
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary dark:text-[#915EFF]'
+            className='bg-[#5F7161] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md hover:text-[#ccffc8] dark:text-[#ccffc8]'
           >
             {loading ? "Sending..." : "Send"}
           </button>
