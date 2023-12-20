@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className={`inset-0  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-center gap-5`}>
         <div className="mt-10 justify-items-center font-poppins text-center	">
-          <h1 className={`${styles.heroHeadText} text-white dark:text-zinc-900`}>Frontend Developer <span className="text-[#CCFFC8]	 dark:text-green-300 font-poppins italic">Kim. </span></h1>
+          <h1 className={`${styles.heroHeadText} text-white dark:text-zinc-900`}>Full Stack Developer <span className="text-[#CCFFC8]	 dark:text-green-300 font-poppins italic">Kim. </span></h1>
           <p className={`${styles.heroSubText} font-thin mt-2 text-white-100 dark:text-zinc-500`}>
             A experienced <span className="text-green-100 font-semibold dark:text-green-300">software developer</span> from Vancouver, BC, Canada<br className='sm:block hidden' />
             with a passion for <span className="text-green-100 font-semibold dark:text-green-300">code</span> and <span className="text-green-100 font-semibold dark:text-green-300">design</span>. Let's build something <span className="text-green-100 font-semibold dark:text-green-300">amazing</span> together.
