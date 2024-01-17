@@ -75,8 +75,8 @@ const GirlsCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [32, 0, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      camera={{ position: [24, 10, 0], fov: 25 }}
+      gl={{ preserveDrawingBuffer: false }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

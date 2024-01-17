@@ -21,7 +21,7 @@
 }
 
 .bg-hero-pattern {
-  background-image: url('../src/assets/background-hero.png');
+  /* background-image: url('../src/assets/background-hero.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
