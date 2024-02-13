@@ -44,19 +44,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "Game Frontend Developer",
+    title: "Game UI Development",
     icon: mobile,
   },
   {
-    title: "React Developer",
+    title: "System Design",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "UI Design",
     icon: creator,
   },
 ];
@@ -114,11 +114,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Developer | Game Frontend Developer",
+    title: "Full Stack Developer",
     company_name: "Blinkmoon Games",
     icon: '',
     iconBg: "#383E56",
-    date: "February 2023 -September 2023",
+    date: "February 2023 - September 2023",
     points: [
       "Developed 'Bravelings' main project E-commerce website for game items using JavaScript, HTML5 and CSS.",
       "Implemented the backend with NodeJS that provides Rest APIs for game characters, users, inventory etc. ",
