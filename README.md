@@ -10,20 +10,19 @@
   <p>I am an experienced Web Site Developer based in Vancouver, BC, Canada. I love combining the worlds of logic and creative website to make eye-catching, accessible, and    user-friendly web and applications. My interest in development started back in 2013 when I studied computer science at University. I have a serious passion for coding    and dynamic user experience. </p>
 
 
-  <h3> :gift_heart: Kimmy - Portfolio </h3>
+  <h3> :gift_heart: My Website - personal projects </h3>
   <hr/>
-  <p> Learn more projects I have been worked | Deploy : AWS Amplify </p>
+  <p> Learn more projects I have been worked to upskill | Deploy : AWS Amplify </p>
   
   
   
 <h3> :sparkles: Preview </h3>
 <hr/>
 
-<img src="https://i.ibb.co/M7fdG7m/Clean-Shot-2023-10-19-at-11-29-16.png" alt="Clean-Shot-2023-10-19-at-11-29-16" border="0">
 
 <h3> :link: Web Link </h3>
 <hr/>
-  <a href="https://kimmy-young.info"><p>Click ✔️: </p></a>
+  <a href="https://kimmy-young.info"><p>Click ✔️</p></a>
   
 
 <h3> :memo: Platforms & Languages  </h3>
