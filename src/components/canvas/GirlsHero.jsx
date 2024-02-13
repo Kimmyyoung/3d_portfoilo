@@ -4,6 +4,7 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import CanvasLoader from "../Loader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import * as THREE from "three";
 
 const Girl = ({ isMobile }) => {
   const [model, setModel] = useState(null);
@@ -84,7 +85,6 @@ const GirlsCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        
         <Girl isMobile={isMobile} />
       </Suspense>
 
